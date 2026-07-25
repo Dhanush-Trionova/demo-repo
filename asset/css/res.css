@@ -1,0 +1,98 @@
+* {
+    padding: 0rem;
+    margin: 0rem;
+}
+
+html {
+    font-size: 16px;
+}
+
+.grid-main {
+    padding: 1.8rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
+    background-color: rgba(128, 128, 128, 0.625);
+    /* max-width: 1500px; */
+}
+
+.grid-one {
+    background-color: white;
+    padding: 1.8rem;
+    border-radius: 1.2rem;
+}
+
+.grid-head {
+    color: red;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.grid-con {
+    margin: 0.6rem 0rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.grid-para {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+@media (max-width: 1000px) {
+    html {
+        font-size: 13px;
+    }
+
+    /* .grid-main{
+        padding: 1.2rem;
+    }
+
+    .grid-one{
+        padding: 1.5rem;
+        border-radius: 18px;
+    }
+
+    .grid-head{
+        font-size: 1.2rem;
+    }
+
+    .grid-con{
+        font-size: 1rem;
+        margin: 0.5rem 0rem;
+    }
+
+    .grid-para{
+        font-size: 0.8rem;
+    } */
+}
+
+@media (max-width: 500px) {
+    html {
+        font-size: 10px;
+    }
+
+    .grid-main{
+        padding: 1.95rem;
+        grid-template-columns: 1fr;
+        column-gap: 2rem;
+    }
+
+    /* .grid-one{
+        padding: 1.2rem;
+        border-radius: 16px;
+    }
+
+    .grid-head{
+        font-size: 1.1rem;
+    }
+
+    .grid-con{
+        font-size: 0.9rem;
+        margin: 0.3rem 0rem;
+    }
+
+    .grid-para{
+        font-size: 0.7rem;
+    } */
+}

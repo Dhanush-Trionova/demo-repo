@@ -1,0 +1,71 @@
+body{
+    overflow: hidden;
+    /* pointer-events : none; */
+}
+#cursor{
+    height: 30px;
+    width: 30px;
+    border: 2px solid red;
+    border-radius: 50%;
+    position: absolute;
+    pointer-events: none;
+    transition: linear;
+}
+#cursor2{
+    height: 15px;
+    width: 15px;
+    border: 2px solid blue;
+    border-radius: 50%;
+    margin: 5.5px 0px 0px 5.5px;
+    position: absolute;
+    pointer-events: none;
+    animation: ami 1s infinite linear;
+}
+@keyframes ami {
+    0%{
+        scale: 0;
+        border-color: rgba(0, 0, 255, 0.17);
+    }
+    100%{
+        scale: 1.5;
+        border-color: rgb(0, 0, 255);
+    }
+}
+
+
+/*  */
+.maindiv{
+    padding: 40px;
+    border-radius: 7px;
+    border: 2px solid black;
+    width: fit-content;
+    height: max-content;
+    position: absolute;
+    top: 25%;
+    right: 35%;
+}
+#input{
+    font-size: 40 !important;
+    font-weight: 600;
+    width: 450px;
+    height: 50px;
+    border-radius: 7px;
+    border: 2px solid rgba(0, 0, 0, 0.407);
+}
+.num{
+    text-align: center;
+    padding-top: 5px;
+}
+#clr{
+    text-align: center;
+    padding-top: 5px;
+}
+#equal{
+    text-align: center;
+    padding-top: 5px;
+}
+.symbol{
+    padding: 5px 0px 0px 0px;
+    font-weight: 600;
+    text-align: center;
+}

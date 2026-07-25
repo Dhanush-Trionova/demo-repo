@@ -1,0 +1,17 @@
+#one{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: black;
+}
+.cursor {
+  width: 20px;
+  height: 20px;
+  background: #000;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  transition: transform 0.1s ease;
+  z-index: 9999;
+}

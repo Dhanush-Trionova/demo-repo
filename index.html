@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./asset/css/style.css">
+
+</head>
+<body>
+    
+   
+
+    <!-- <div class="container-fluid">
+        <img src="./asset/css/form bg.jpg" width="100%">
+    </div> -->
+
+
+
+
+
+
+ <script>
+    //1. variable declaration
+    // let a = 10;
+    // let b= 20;
+    // let c= a+b;
+    // document.write(c);
+
+
+    //2. tables using loop
+//     let a=2;
+//     for(i=1;i<=10;i++)
+//  {
+//     console.log(a +" x "+i+" = "+ a*i);
+//  }
+
+
+//3. prime number
+// let a=17;
+// let count=0;
+// for(i=1;i<=a;i++)
+// {
+//     if(a%i==0)
+// {
+//     count++;
+// }
+// }
+// if(count==2)
+// console.log("prime");
+
+// else{
+//     console.log("not prime");
+// }
+
+
+//4. functions
+// function add(a,b){
+//     console.log(a+b);
+// }
+// add(29,20)
+
+
+//5. Write a program to check if a number is even or odd.
+// let a=2;
+// if(a%2==0)
+// {
+//     console.log("even");
+// }
+// else{
+//     console.log("odd");
+// }
+
+
+//6. Write a program to find the largest of three numbers.
+// let a=10;
+// let b=20;
+// let c=30;
+// let largest=0;
+
+// if(a>=b && a>=c)
+// {
+//     largest=a;
+// }
+// else if(b>=a && b>=c){
+//     largest=b;
+// }
+// else if(c>=a && c>=b){
+//     largest=c;
+// }
+// console.log(largest);
+
+
+//7. Write a program to check if a number is positive, negative, or zero.
+// let a= 0;
+// if(a>0){
+//     console.log("positive")
+// }
+// else if(a<0){
+//     console.log("negative")
+// }
+// else{
+//     console.log("zero")
+// }
+
+
+//8. How do you create an array in JavaScript?
+// let fruits=["apple","orange","cherry"];
+
+// let shape= new Array("square","triangle","cube");
+
+// let num=[];
+// num.push(1);
+// num.push(2);
+// num.push(3);
+// document.write(fruits);
+
+
+//9. Write a function that returns the first element of an array.
+// let a=[1,2,3,4,5];
+// console.log(a[0]);
+
+
+//10. Write a program to reverse a string.
+// function a(s)
+// {
+//     console.log(s.split("").reverse().join("")) ;
+// }
+// a("dhanush")
+
+
+//11. How do you find the length of an array?
+// let num=[1,2,3,4,5,6];
+// document.write(num);
+// console.log(num.length);
+
+
+//12. object creation
+// let dhanush={
+//     name :"dhanush",
+//     age :"21",
+//     city :"coimbatore"
+// };
+// console.log(dhanush.age);
+
+
+//13. Factorial of a Number
+// let num=5;
+// let fact=1;
+
+// for(i=1;i<=num;i++)
+// {
+//     fact*=i;
+// }
+// console.log(fact);
+
+
+//14. Count Vowels in a String
+// let a="dhanush";
+// let vowels="aeiou";
+// let count=0;
+// for(i=0;i<=a.length;i++){
+//     if(vowels.includes(a[i])){
+//         count++;
+//     }
+// }
+// console.log(count);
+
+
+//15. Fibonacci Sequence
+// let num=10;
+// let a=0,b=1;
+
+// for(i=1;i<=num;i++){
+//     console.log(a);
+//     let s=a+b;
+//     a=b;
+//     b=s;
+// }
+
+
+//16. Check if a String is a Palindrome
+// let a="madam";
+// let b=a.split("").reverse().join("");
+
+// if(b==a){
+//     console.log("palindrome");
+// }
+// else{
+//     console.log("not");
+// }
+
+
+//17. Sum of Numbers in an Array
+// let a=[1,2,3,4,5];
+// let c=0;
+// for(i=0;i<a.length;i++)
+// {
+//     c+=a[i];
+// }
+// console.log(c);
+
+
+//18. Find the Minimum and Maximum in an Array
+// let a=[1,2,3,4,5,6];
+// let max=Math.max(...a);
+// let min=Math.min(...a);
+
+// console.log(max);
+// console.log(min);
+
+
+//19.  Count Occurrences of a Character in a String
+// let str="hello world";
+// let a='o';
+// let c=0;
+// for(i=0;i<=str.length;i++)
+// {
+//     if(a==str[i]){
+//         c++;
+//     }
+// }
+// console.log(c);
+
+//20. Check if a Year is a Leap Year
+// let a=2019;
+// if(a%4==0 && a%100!==0 || a%400==0){
+//     console.log("leap year");
+// }
+// else{
+//     console.log("not");
+// }
+
+
+//21. Check if an Array Contains a Value
+// let num=[1,2,3,4,5,6];
+// let a=num.includes(7);
+// console.log(a?"includes":"not");
+
+
+                                          // intermediate//
+
+
+//22. Check if Two Strings Are Anagrams
+// let str1="dhanush";
+// let str2="danush";
+// let a=str1.toLowerCase().split("").sort().join("");
+// let b=str2.toLowerCase().split("").sort().join("");
+
+// if(a==b){
+//     console.log("anagrams");
+// }
+// else{
+//     console.log("not");
+// }
+
+
+// 23. Find Duplicates in an Array
+// let a=[1,2,3,4,1,4];
+// let b=[];
+// let c=0;
+// for(i=0;i<a.length;i++){
+//     for(j=0;j<=i;j++){
+//         if(a[i]==a[j]){
+//             c++;
+//         }
+//         if(c>1){
+//             b.push(a[j]);
+//         }
+//     }
+//     c=0;
+// }
+// console.log(b);
+
+
+// 24. Create a Simple Calculator (using prompt)
+// let num1 = prompt("Enter first number:");
+// let operator = prompt("Enter operator (+, -, *, /):");
+// let num2 = prompt("Enter second number:");
+// let result;
+
+// switch (operator) {
+//   case "+":
+//     result = num1 + num2;
+//     break;
+//   case "-":
+//     result = num1 - num2;
+//     break;
+//   case "*":
+//     result = num1 * num2;
+//     break;
+//   case "/":
+//     result = num1 / num2;
+//     break;
+//   default:
+//     result = "Invalid operator";
+// }
+
+// alert("Result: " + result);
+
+
+// 25. Capitalize Each Word
+// let str="hello world";
+// console.log(str.toUpperCase());
+
+
+// 26. Count Words in a Sentence
+// function count(str){
+//     console.log(str.trim().split(/\s+/).length);
+// }
+// count("hello world e")
+
+
+
+
+
+                                                    // Array Methods //
+
+
+                                    // Mutator Methods (modify the original array) //
+
+
+
+                                                    // push()     adds element in last
+// let fruit=["apple","orange","mellon"];
+// fruit.push("cherry");
+
+
+                                                  // pop()   delete last element
+// fruit.pop();
+
+
+                                                    // shift() deletes first element 
+// fruit.shift();
+
+
+                                                    //    unshift() adds elements in the front
+// fruit.unshift("pears","plums");
+
+                   
+                                                    //  splice() can add, remove, replace
+// let b=fruit.splice(1);
+
+
+// fruit.splice(1,3,"add");
+// console.log(fruit);
+
+                                                    //    sort() arranges elements
+// let n=[1,3,2,5,6,4];
+// console.log(n.sort());
+                      
+                                                    // reverse()
+// let str=['d','h','a','n','u','s','h'];
+// console.log(str.reverse());
+
+                                                    //  fill() fills elements
+// let fill=[1,3,5,6,7];
+// console.log(fill.fill('a',1,3));
+                                  
+                                                    // copywithin() copys elements within array
+// let a=[1,2,3,4,5,6,7,8];
+// a.copyWithin(0,3,4);
+// console.log(a);
+
+                                            //    Accessor Methods (do not modify the original array) //
+
+                                                     // concat() to merge two or more arrays
+// let x=[4,5,6];
+// let y=[1,2,5];
+// console.log(x.concat(y));
+
+// let a=[1,2,3,4];
+// let b=[8,9,10];
+// let c=a.concat(5,6,7,b);
+// console.log(c);
+
+                                                    //  includes() to check a element in a array
+// let str=['a','b','c','d'];
+// console.log(str.includes('d'));
+
+// let x=[1,3,4,5,6];
+// console.log(x.includes(3,2));  // (element,index)
+
+                                                    //  indexOf() gets the elements using index value
+// let a=[1,2,3,4,5];
+// console.log(a.indexOf(2,1));
+
+                                                    // lastIndexOf() same but searchers from backward
+// let x=[1,3,5,7,9,2];
+// console.log(x.lastIndexOf(9,4));    //if present prints the index value
+ 
+                                                    // join() join all type of array
+// let a=['a','b','c','d','e'];
+// console.log(a.join());
+// console.log(a.join(' '));
+// console.log(a.join('-'));             //missing elements are considered as empty string
+
+                                                    //  slice() gets the element from range
+// let a=[1,2,3,4,5,6];
+// console.log(a.slice(0,3));
+// console.log(a);                 //original array remains unchanged
+
+                                                    //  toString() converts any type into string
+// let a=['a',2,true];
+// console.log(a.toString());
+
+                                                    // toLocaleString() same as tostring but powerful, can be used according to locality
+// let str=[24000];
+// console.log(str.toLocaleString('en-US',{
+//     style:'currency',
+//     currency:'USD'
+// }));        
+
+                                                    //  at() gets elements through index value in both positive and negative
+// let a=[1,2,3,4,5,6,7];
+// console.log(a.at(-1));
+// console.log(a.at(3));
+
+                                                    //  find() finds first number that satisfies the given condition
+// let a=[1,2,4,5,67,767];
+// console.log(a.find(num=>num>50));
+
+// let obj=[
+//     {id: 1, name:'dhanush'},
+//     {id: 2 ,name:'thasvanth'}
+// ]
+// console.log(obj.find(n=>n.id===2));
+
+                                                    // findIndex() same but prints index values
+// let a=[1,23,45,67,81];
+// console.log(a.findIndex(num=>num>20));  
+
+                                                    //  findLastIndex() same but checks from backward
+// let a=[1,23,45,67,81];
+// console.log(a.findLastIndex(num=>num>20)); // o/p= 4
+
+                                                    //  findLast() prints the elements of the satisfied conditiond
+// let a=[1,23,45,67,81];
+// console.log(a.findLast(num=>num>20)); // o/p= 81
+
+                                                    //  entries used in loops and prints elements with index in a iteration [0, 'a']
+// let str=['a','b','c','d'];
+// let arr=Array.from(str.entries());
+// console.log(arr);
+
+                                                    // keys() can be used in foreach, prints only the index
+// let str=['a','b','c','d'];
+// for(let a of str.keys()){
+//     console.log(a);
+// }
+
+                                                    //  values() same but prints all the elements in a separate iteration
+// let str=['a','b','c','d'];
+// for(let a of str.values()){
+//     console.log(a);
+// }
+
+// let a=[1,2,3,4,5];
+// let b=Array.from(a.values());
+// console.log(b);
+
+                                                    //  flat() used to flat the nested array
+// x   //flat's default value is 1.
+
+                                                    //  flatMap() 
+
+
+                                                    
+
+
+                                                    //  
+
+                                                    
+
+                                                                      // Iteration methods //
+
+                                                    // foreach()
+
+// let colors = ['red', 'green', 'blue'];
+
+// colors.forEach(function(color) {
+//   console.log(color);
+// });
+
+                                                //   map() creates a new array by satisfing the map condition 
+// let a=[1,2,3,4,5,6,7,8];
+// console.log(a.map(num=>num*2));
+
+                                                // filter() creates a new array by filtering the original array
+// let a=[1,2,3,4,5,6,7,8];
+// let b=a.filter(num=>num%2===0);
+// console.log(b);
+
+                                                //  reduce() takes 1st two elements and compares it and stores it in the acc, then compares it to the next element.
+// let n = [1, 2, 3, 4];
+// let t = n.reduce((acc, b) => acc + b);
+
+// console.log(t);
+
+                                                //  reduceRight() same but goes from right to left
+// let n = [1, 2, 3, 4];
+// let t = n.reduceRight((acc, b) => acc - b);
+
+// console.log(t);
+
+                                                // some() checks wheather if any one of the elements passes the given condition
+// let numbers = [1, 3, 5, 7, 4];
+// let Even = numbers.some(num => num % 2 === 0);
+
+// console.log(Even);
+
+                                                    //   every() same but all the elements should pass the condition
+// let numbers = [2, 4, 6, 8, 10];
+// let Even = numbers.every(num => num % 2 === 0);
+
+// console.log(Even);
+
+
+
+                                                                //   Pattern //
+
+
+                                                                // pyramid
+// let n=5;
+
+// for(i=1;i<=n;i++)
+// {
+//     let a=' '.repeat(n-i);
+//     a+="*".repeat(2*i-1);
+//     console.log(a);
+// }
+
+
+                                                            //  Reverse an Array (without .reverse())
+// let a=[1,2,3,4,5,6];
+// let b=[];
+// for(i=a.length-1;i>-1;i--)
+// {
+//     b.push(a[i]);
+// }
+// console.log(b);
+
+                                                            // Create a Number Pattern (Triangle)
+// let n=5;
+
+// for(i=1;i<=n;i++)
+// {
+//     let a='';
+//     for(j=1;j<=i;j++)
+// {
+//     a+=j+" ";
+// }
+// console.log(a);
+// }
+
+                                                        //   Flatten a Nested Array (1 level)
+// let a=[1,2,3,[4,5]];
+// console.log(a.flat());
+
+                                                        //  Diamond Pattern
+// let n=5;
+// for(i=1;i<=n;i++)
+// {
+//     let a=' '.repeat(n-i);
+//     a+='*'.repeat(2*i-1);
+//     console.log(a);
+// }
+// for(i=n-1;i>=1;i--)
+// {
+//     let a=' '.repeat(n-i);
+//     a+='*'.repeat(2*i-1);
+//     console.log(a);
+// }
+                                                    //    Hollow Square
+// let n=5;
+// for(i=1;i<=n;i++)
+// {
+//     if(i===1 || i===n){
+//         console.log('*'.repeat(n));
+//     }
+//     else{
+//         console.log('*'+' '.repeat(n-2)+'*');
+//     }
+// }
+
+
+                                                    //    Right-Aligned Triangle
+// let n=5;
+// for(i=1;i<=n;i++)
+// {
+//     let a=' '.repeat(n-i);
+//     a+='*'.repeat(i);
+//     console.log(a);
+// }
+ 
+                                                        //    Right-Angled Triangle
+// let n=5;
+// for(i=1;i<=n;i++){
+//     console.log('*'.repeat(i));
+// }
+// for(i=n-1;i>=1;i--){
+//     console.log('*'.repeat(i));
+// }
+
+                                                            //  Inverted Pyramid
+// let n=5;
+// for(i=n;i>=1;i--){
+//     let a=' '.repeat(n-i);
+//     a+='*'.repeat(i*2-1);
+//     console.log(a);
+// }
+
+
+
+
+
+</script>
+
+
+<!-- mouseup -->
+<!-- <div id="box" style="width:200px;height:200px;background:lightgray;">Release mouse here</div>
+
+<script>
+  const box = document.getElementById("box");
+
+  box.addEventListener("mouseup", () => {
+    box.style.backgroundColor = "yellow";
+    box.innerText = "Mouse Released!";
+  });
+</script> -->
+
+
+                                   <!-- drag -->
+
+<!-- <div id="drag" style="width:100px;height:100px;background:red;position:absolute;"></div>
+
+<script>
+  const drag = document.getElementById("drag");
+  let isDragging = false;
+
+  drag.addEventListener("mousedown", () => {
+    isDragging = true;
+  });
+
+  document.addEventListener("mousemove", (e) => {
+    if (isDragging) {
+      drag.style.left = e.clientX + "px";
+      drag.style.top = e.clientY + "px";
+    }
+  });
+
+  document.addEventListener("mouseup", () => {
+    isDragging = false;
+  });
+</script> -->
+
+
+<!--  -->
+
+
+<!-- mousedown : mouse btn click-->
+
+<!-- <div id="box" style="width:200px;height:200px;background:lightgray;">Click inside me</div>
+
+<script>
+  const box = document.getElementById("box");
+
+  box.addEventListener("mousedown", (e) => {
+    if (e.button === 0) {
+      box.style.backgroundColor = "lightgreen"; // left click
+    } else if (e.button === 2) {
+      box.style.backgroundColor = "lightcoral"; // right click
+    }
+  });
+
+  // Prevent default context menu for right-click
+  box.addEventListener("contextmenu", (e) => {
+    e.preventDefault();
+  });
+</script> -->
+
+
+ <!--  -->
+
+
+ <!-- mouseenter : triggered when the mouse pointer enters the boundary of an element. -->
+
+  <!-- <div id="box" style="width:200px;height:200px;background:lightblue;">
+  Hover over me!
+</div>
+
+<script>
+  const box = document.getElementById("box");
+
+  box.addEventListener("mouseenter", () => {
+    box.style.backgroundColor = "skyblue";
+    box.innerText = "Mouse entered!";
+  });
+</script> -->
+
+  <!--  -->
+
+
+  <!-- mouseleave : triggered when the mouse pointer leaves the boundary of an element. -->
+
+  <!-- <div id="box" style="width:200px;height:200px;background:lightblue;">
+  Hover and then leave me
+</div>
+
+<script>
+  const box = document.getElementById("box");
+
+  box.addEventListener("mouseleave", () => {
+    box.style.backgroundColor = "lightgray";
+    box.innerText = "Mouse left!";
+  });
+</script> -->
+
+  <!--  -->
+
+  <!-- mouseover : triggered when the mouse pointer enters an element or any of its children. -->
+
+  <!-- <div id="parent" style="width:300px; height:150px; background-color:lightblue;">
+  Parent
+  <div id="child" style="width:150px; height:50px; background-color:lightgreen; margin:10px;">
+    Child
+  </div>
+</div>
+
+<script>
+  const parent = document.getElementById("parent");
+
+  parent.addEventListener("mouseover", () => {
+    parent.style.backgroundColor = "skyblue";
+    console.log("Mouse over parent or child");
+  });
+</script> -->
+
+   <!--  -->
+
+
+   <!-- mouseout : triggered when the mouse pointer leaves an element or any of its child elements. -->
+    <!-- <div id="box" style="width:200px;height:200px;background-color:lightblue;">
+  Hover and leave me
+  <div style="width:100px;height:100px;background-color:lightgreen;margin:10px;">Child</div>
+</div>
+
+<script>
+  const box = document.getElementById("box");
+
+  box.addEventListener("mouseout", () => {
+    box.style.backgroundColor = "lightgray";
+    console.log("Mouse left element or child");
+  });
+</script> -->
+
+    <!--  -->
+
+
+
+    <!-- contextmenu : triggered when the user right-clicks on an element, usually opening the browser’s context menu. -->
+
+     <!-- <div id="box" style="width:200px;height:100px;background:#e0e0e0;">
+  Right-click inside me
+</div>
+
+<script>
+  const box = document.getElementById("box");
+
+  box.addEventListener("contextmenu", (event) => {
+    event.preventDefault(); // stop the default context menu
+    alert("Custom right-click action!");
+  });
+</script> -->
+
+     <!--  -->
+
+     <!-- auxclick : triggered when the user clicks a non-primary mouse button -->
+<!-- 
+     <div id="box" style="width:200px;height:100px;background:#eee;">
+  Middle-click inside me
+</div>
+
+<script>
+  const box = document.getElementById("box");
+
+  box.addEventListener("auxclick", (e) => {
+    if (e.button === 1) {
+      alert("Middle mouse button clicked!");
+    }
+  });
+</script> -->
+
+      <!--  -->
+
+
+      <!-- pointerdown : triggered when any pointing device (mouse, pen, touch) presses down on an element. It is part of the Pointer Events API, which unifies mouse, touch, and stylus input under a single event model. -->
+<!-- 
+      <div id="box" style="width:200px;height:200px;background:#dcdcdc;">
+  Touch or Click Me
+</div>
+
+<script>
+  const box = document.getElementById("box");
+
+  box.addEventListener("pointerdown", (e) => {
+    console.log("Pointer down!");
+    console.log("Pointer type:", e.pointerType);
+    box.style.backgroundColor = "lightgreen";
+  });
+</script> -->
+
+    
+       <!--  -->
+<!-- <div class="cursor"></div>
+
+<script>
+           const cursor = document.querySelector('.cursor');
+document.addEventListener('mousemove', e => {
+  cursor.style.left = `${e.clientX}px`;
+  cursor.style.top = `${e.clientY}px`;
+});
+</script> -->
+
+
+
+
+
+
+                                                                  <!-- Parallax Background Movement -->
+                                                                   <!-- Custom Cursor Replacement -->
+                                                                    <!-- Magnetic Buttons -->
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

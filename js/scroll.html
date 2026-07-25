@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scroll Text Animation</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      background: #0d0d0d;
+      color: white;
+      overflow-x: hidden;
+    }
+
+    /* Main scroll section */
+    .scroll-section {
+      position: relative;
+      height: 400vh; /* 3 texts + exit space */
+    }
+
+    /* Sticky container that stays fixed while scrolling */
+    .scroll-container {
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    /* Text styles */
+    .scroll-text {
+      position: absolute;
+      font-size: 5vw;
+      font-weight: 700;
+      opacity: 0;
+      transform: translateY(50px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    .scroll-text.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Just a normal section after animation ends */
+    .next-section {
+      height: 100vh;
+      background: #1e1e1e;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 3vw;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="scroll-section">
+    <div class="scroll-container">
+      <div class="scroll-text" style="color:#ff4d4d;">Design Intelligently</div>
+      <div class="scroll-text" style="color:#4dff91;">Build Beautifully</div>
+      <div class="scroll-text" style="color:#4dc3ff;">Grow Confidently</div>
+    </div>
+  </section>
+
+  <section class="next-section">
+    <h2>Next Section Starts Here 🚀</h2>
+  </section>
+
+  <script>
+    // Select elements
+    const texts = document.querySelectorAll('.scroll-text');
+    const section = document.querySelector('.scroll-section');
+    const sectionHeight = section.offsetHeight - window.innerHeight;
+
+    window.addEventListener('scroll', () => {
+      const scrollPos = window.scrollY - section.offsetTop;
+      const scrollFraction = scrollPos / sectionHeight;
+
+      // There are 3 texts, divide scroll into equal parts
+      const totalTexts = texts.length;
+      const activeIndex = Math.min(
+        totalTexts - 1,
+        Math.floor(scrollFraction * totalTexts)
+      );
+
+      texts.forEach((text, i) => {
+        if (i === activeIndex) {
+          text.classList.add('active');
+        } else {
+          text.classList.remove('active');
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
